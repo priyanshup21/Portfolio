@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanshu's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  margin-left: 400px;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 20px 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Hero */
+.hero {
+    background: url("https://example.com/image.jpg") no-repeat center center/cover;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* About */
+#about {
+  background: #f5f5f5;
+  padding: 140px 100px;
+  margin-right: auto;
+}
+
+/* Portfolio */
+#portfolio {
+  padding: 40px 0;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+}
+
+/* Contact */
+#contact {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#contact button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+           
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+          <img src="priyanshu.png" alt="Priyanshu's Profile pic" width="200" height="200">
+          <h1 >Priyanshu Priyam</h1>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Let me show you what I can do</p>
+      </div>
+    </div>
+  </header>
+  
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p><em>2nd year UG student at <strong><a href="https://www.iitk.ac.in/">IITK</a></strong>.</em></p>
+      <p>I'm a student of Y21 batch and my branch is Civil Engg. I love Mathematics.</p>
+      <p>I'm from Begusarai distict of Bihar.</p>
+    <h3>Relevent courses</h3>
+    <ul>
+      <li><a href="https://sites.google.com/view/mth101-2021/home?pli=1">MTH101A</a></li>
+      <li><a href="https://home.iitk.ac.in/~santosha/MTH102.html">MTH102A</a></li>
+      <li><a href="https://sites.google.com/view/mso-203-b-2022/home">MSO203B</a></li>
+      <li><a href="https://hello.iitk.ac.in/course/hso201a2021">HSO201A</a></li>
+      <p><a href="hobbies.html">My Hobbies</a></p>
+    </ul>
+    </div>
+  </section>
+  
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <img src="Project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>TA202A : Juice Mixer</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="Project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>TA201A : Racing Car</p>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>  
